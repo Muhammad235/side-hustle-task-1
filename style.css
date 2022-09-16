@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@font-face {
+    font-family:Norse-Bold;
+    src: url('Norse-Bold.otf');
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+
+h1{
+    font-family: Norse-Bold;
+    font-size: 70px;
+    color: #fff;
+    margin-top: 25px;
+}
+
+section .image{
+    width: 400px;
+    /* height: 100vh; */
+    height: 700px;
+    background: url('halie-west-25xggax4bSA-unsplash.jpg'); 
+    background-size: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.image .img-back{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 120px;
+    width: 400px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.img-back .img{
+    width: 70px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.top-info, h2{
+    padding-left: 2rem;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.right-info {
+    background-color: #f9fafc;
+}
+
+.right-info .top-info{
+    margin-top: 170px;
+    width: 60%;
+}
+
+.right-info .top-info .h3-2{
+    margin-top: 40px;
+    font-family: sans-serif;
+}
+
+
+.form-div{
+    margin-top: 30px;
+}
+
+.head{
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.head h2{
+    font-size: 20px;
+}
+
+.form-div{
+    background-color: #fff;
+}
+
+.form-details{
+    /* display: flex;
+    flex-direction: row;  */
+    background-color: white;
+    box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.47);
+    display: grid;
+    grid-template-columns: 300px auto auto;
+    padding-left: 2rem;
+    margin-top: 10px;
+}
+
+.left-inputs, .right-inputs{
+     /* display: flex;
+    flex-direction: column;  */
+    width: 30%; 
+}
+
+
+input[type='text'],input[type='number']{
+    width: 200px;
+    height: 27px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 0.5px solid rgba(0,0,0,0.5); 
+    outline: none;
+}
+
+
+input:focus{
+    outline: 1px solid rgb(8, 222, 8);
+    border: none;
+}
+
+
+label{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+button{
+    padding: 12px 25px;
+    margin-left: 2rem;
+    background-color: rgb(4, 179, 4);
+    border: none;
+    border-radius: 5px;
+    margin-top: 23px;
+    font-size: 10px;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #488a0f;
+}
+
+#not-match{
+    color: red;
+    width: 200px;
+    display: none;
+    margin-top: -10px;
+    margin-bottom: 12px;
+}
+
+/* #password, #password-check{
+    outline: none;
+    border: 1px solid red;
+}  */
+
+.acct{
+    margin-left: 2rem;
+    margin-top: 20px;
+}
+
+.acct a{
+    text-decoration: none;
+    color: green;
+}
+
+
+@media screen and (max-width: 992px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .image{
+        width: 100%;
+        /* height: 100vh; */
+        height: 600px;
+        background: url('halie-west-25xggax4bSA-unsplash.jpg'); 
+        background-size: 100%;
+        background-repeat: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image .img-back{
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 120px;
+        width: 100%;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+
+        
+    .right-info .top-info{
+        margin-top: 100px;
+        width: 75%;
+    }
+
+    .top-info, h2{
+        padding-left: 1rem;
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    .form-details{
+        box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.47);
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 2rem;
+        margin-top: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 576px){
+    section .image{
+        width: 100%;
+        /* height: 100vh; */
+        height: 500px;
+        background: url('halie-west-25xggax4bSA-unsplash.jpg'); 
+        background-repeat: none;
+        background-size: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
